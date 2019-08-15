@@ -5,7 +5,7 @@ function Show(props) {
   const [superhero, setsuperhero] = useState([]);
 
   useEffect(() => {
-    Axios.get(`/api/${props.match.params.id}`)
+    Axios.get(`/api/superheroes/${props.match.params.id}`)
       .then(result => setsuperhero(result.data))
       .catch(err => console.error(err));
   }, [props]);

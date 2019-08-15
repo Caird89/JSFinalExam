@@ -32,7 +32,7 @@ function Index() {
             {superheroes.map(superhero => (
               <tr key={superhero._id}>
                 <td>
-                  <Link to={`/superheroes/${superhero._id}`}>{superhero.realName}</Link>
+                  <Link to={`/${superhero._id}`}>{superhero.realName}</Link>
                 </td>
                 <td>{superhero.superheroName}</td>
                 <td>{superhero.group}</td>
